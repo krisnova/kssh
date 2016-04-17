@@ -76,6 +76,12 @@ description = '''
 # Available actions
 actions = ['connect', 'list', 'generate', 'copy', 'test', 'add', 'delete', 'purge']
 
+# Fix the GNU vs BSD tab completion problem
+if 'libedit' in readline.__doc__:
+    readline.parse_and_bind("bind ^I rl_complete")
+else:
+    readline.parse_and_bind("tab: complete")
+
 
 ########################################################################################################################
 #
@@ -420,8 +426,4 @@ def complete_launcher(text, state):
 # BOOTSTRAP
 #
 if __name__ == "__main__":
-    if 'libedit' in readline.__doc__:
-        readline.parse_and_bind("bind ^I rl_complete")
-    else:
-        readline.parse_and_bind("tab: complete")
     main()
