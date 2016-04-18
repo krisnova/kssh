@@ -27,7 +27,7 @@ setup(
         'Programming Language :: Python :: 2.7',
     ],
     keywords='SSH, ssh, manager, management, wrapper, config, configuration, tool, utility, cli, command line, command, line',
-    py_modules=["kssh.py"],
+    py_modules=["kssh"],
     entry_points={
         'console_scripts': [
             'kssh=kssh.kssh:main',
