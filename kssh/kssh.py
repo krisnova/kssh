@@ -33,12 +33,14 @@ import readline
 from subprocess import call
 
 # Execution Parameters
-version = "1.1.4"
+version = "1.1.5"
 show_errors = False
 
 # Usage for the tool
 description = '''
-\033[1mkssh [Kris SSH]\033[0m V%s Author: Kris Cross Applesauce <kris@fabulous.af>
+\033[1mkssh [Kris SSH]\033[0m V%s
+
+Author: Kris Cross Applesauce <kris@fabulous.af>
 
     Quick Start : kssh <new_ssh_alias>
 
