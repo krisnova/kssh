@@ -30,7 +30,7 @@ setup(
     py_modules=["kssh.py"],
     entry_points={
         'console_scripts': [
-            'kssh.py=kssh.py:main',
+            'kssh=kssh:main',
         ],
     },
 )
