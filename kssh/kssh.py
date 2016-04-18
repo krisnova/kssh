@@ -33,7 +33,7 @@ import readline
 from subprocess import call
 
 # Execution Parameters
-version = "1.0.7"
+version = "1.1.3"
 show_errors = False
 
 # Usage for the tool
@@ -48,29 +48,29 @@ description = '''
 [ACTIONS]
 
     \033[95m[CONNECT]\033[0m Will connected to an alias. If no alias is found, will attempt to create one.
-        kssh.py <\033[91malias\033[0m>
-        kssh.py connect <\033[91malias\033[0m>
+        kssh <\033[91malias\033[0m>
+        kssh connect <\033[91malias\033[0m>
 
     \033[95m[LIST]\033[0m Will list all known aliases.
-        kssh.py list
+        kssh list
 
     \033[95m[GENERATE]\033[0m Will generate a new RSA key named after the alias.
-        kssh.py GENERATE <\033[91malias\033[0m>
+        kssh GENERATE <\033[91malias\033[0m>
 
     \033[95m[COPY]\033[0m Will attempt to copy an RSA key to a remote host.
-        kssh.py copy <\033[91muser\033[0m> <\033[91mhost\033[0m> <\033[91mpath_to_key\033[0m>
+        kssh copy <\033[91muser\033[0m> <\033[91mhost\033[0m> <\033[91mpath_to_key\033[0m>
 
     \033[95m[TEST]\033[0m Will test a connection no a known alias. If the alias is not found, the test will fail.
-        kssh.py test <\033[91malias\033[0m>
+        kssh test <\033[91malias\033[0m>
 
     \033[95m[ADD]\033[0m Will add a new alias. If the alias already exists, it will be updated.
-        kssh.py add <\033[91malias\033[0m>
+        kssh add <\033[91malias\033[0m>
 
     \033[95m[DELETE]\033[0m Will delete an existing alias if it exists.
-        kssh.py delete <\033[91malias\033[0m>
+        kssh delete <\033[91malias\033[0m>
 
     \033[95m[PURGE]\033[0m Will purge the existing SSH config data (This cannot be undone!)
-        kssh.py purge
+        kssh purge
 ''' % version
 
 # Available actions
