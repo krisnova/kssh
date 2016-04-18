@@ -1,1 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
+.idea
+kSSH.egg-info
+kssh.py.egg-info
