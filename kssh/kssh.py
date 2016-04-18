@@ -38,7 +38,7 @@ show_errors = False
 
 # Usage for the tool
 description = '''
-\033[1mkssh [Kris SSH]\033[0m V%s
+\033[1mkssh [Kris SSH]\033[0m V%s Author: Kris Cross Applesauce <kris@fabulous.af>
 
     Quick Start : kssh.py <new_ssh_alias>
 
