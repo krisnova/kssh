@@ -21,8 +21,9 @@ setup(
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
-        'Topic :: Software Development :: SSH',
+        'Topic :: Software Development :: System',
         'License :: OSI Approved :: MIT License',
+        'Environment :: MacOS X'
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
