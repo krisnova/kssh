@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+<article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-kssh" class="anchor" href="#kssh" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>kSSH - <a href=https://github.com/kris-nova/kssh>Github Repository</a></h1>
+
+    Author: Kris Cross Applesauce <br>
+    Email: kris@fabulous.af
+
+    <p>kSSH is a simple utility for managing SSH hosts and tracking aliases in an SSH config file.
+        kSSH helps managing a large number of SSH hosts by making the process easy. With kSSH the user never needs to remember SSH hostnames again!</p>
+
+    <h4><a id="user-content-installing" class="anchor" href="#installing" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Installing</h4>
+
+    <p>MacOS X</p>
+
+<pre><code>sudo -h pip install kssh
+</code></pre>
+
+    <h4><a id="user-content-running-kssh" class="anchor" href="#running-kssh" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Running kSSH</h4>
+
+    <h6><a id="user-content-quick-start" class="anchor" href="#quick-start" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Quick Start</h6>
+<pre><code>kssh &lt;new_alias_name&gt;
+</code></pre>
+
+    <p>This will build a new kSSH record for the given alias. kSSH will then attempt to connect to the host using a defined RSA key. If a key cannot be found kSSH will create one. kSSH will then verify the connection.</p>
+
+    <p>Now the user can SSH into the host by using the same command as above.</p>
+
+    <h6><a id="user-content-actions" class="anchor" href="#actions" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Actions</h6>
+
+    <p>[ACTIONS]</p>
+
+    <p><strong>CONNECT</strong> Will connected to an alias. If no alias is found, will attempt to create one.</p>
+
+<pre><code>kssh &lt;alias&gt;
+kssh connect &lt;alias&gt;
+</code></pre>
+
+    <p><strong>LIST</strong> Will list all known aliases.</p>
+
+<pre><code>kssh list
+</code></pre>
+
+    <p><strong>GENERATE</strong> Will generate a new RSA key named after the alias.</p>
+
+<pre><code>kssh GENERATE &lt;alias&gt;
+</code></pre>
+
+    <p><strong>COPY</strong> Will attempt to copy an RSA key to a remote host.</p>
+
+<pre><code>kssh copy &lt;user&gt; &lt;host&gt; &lt;path_to_key&gt;
+</code></pre>
+
+    <p><strong>TEST</strong> Will test a connection no a known alias. If the alias is not found, the test will fail.</p>
+
+<pre><code>kssh test &lt;alias&gt;
+</code></pre>
+
+    <p><strong>ADD</strong> Will add a new alias. If the alias already exists, it will be updated.</p>
+
+<pre><code>kssh add &lt;alias&gt;
+</code></pre>
+
+    <p><strong>DELETE</strong> Will delete an existing alias if it exists.</p>
+
+<pre><code>kssh delete &lt;alias&gt;
+</code></pre>
+
+    <p><strong>PURGE</strong> Will purge the existing SSH config data (This cannot be undone!)</p>
+
+<pre><code>kssh purge
+</code></pre>
+
+    <h4><a id="user-content-new-release-process" class="anchor" href="#new-release-process" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>New Release Process</h4>
+
+    <ul>
+        <li>Update version in kssh.py</li>
+        <li>Update version in setup.py</li>
+        <li>Push to github</li>
+        <li><p>Push to PyPi (Use credentials)</p>
+
+            <p>sudo -H python setup.py register sdist bdist upload</p></li>
+    </ul>
+</article>
+</div>
