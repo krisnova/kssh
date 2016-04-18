@@ -40,7 +40,7 @@ show_errors = False
 description = '''
 \033[1mkssh [Kris SSH]\033[0m V%s Author: Kris Cross Applesauce <kris@fabulous.af>
 
-    Quick Start : kssh.py <new_ssh_alias>
+    Quick Start : kssh <new_ssh_alias>
 
     \033[1mkssh\033[0m is a simple utility for managing SSH hosts and tracking aliases in an SSH config file.
     This tool is catered to work on OSX. Any other operating systems are currently not supported.
@@ -183,7 +183,7 @@ def action_add(name):
         if not action_test(name):
             out("Major error, unable to contact host")
             sys.exit(1)
-    out("You can now access this host using 'kssh.py %s'" % name)
+    out("You can now access this host using 'kssh %s'" % name)
 
 
 ########################################################################################################################
@@ -282,7 +282,7 @@ def action_list():
 #
 def action_connect(name):
     if not exists(name):
-        out("Unable to find %s, adding" % name)
+        out("Unable to find alias %s" % name)
         action_add(name)
     out("Connecting to %s" % name)
     call(["ssh", name])
@@ -295,7 +295,7 @@ def action_connect(name):
 #
 def init_datastore():
     if not os.path.exists(os.path.expanduser('~') + "/.ssh"):
-        print "Setting up kssh.py datastore.."
+        print "Setting up kssh datastore.."
         os.makedirs(os.path.expanduser('~') + "/.ssh")
     if not os.path.exists(os.path.expanduser('~') + "/.ssh/config"):
         f = open(os.path.expanduser('~') + "/.ssh/config", 'w')
