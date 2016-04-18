@@ -17,6 +17,7 @@ setup(
     author='Kris Applesauce',
     author_email='kris@nivenly.com',
     license='MIT',
+    packages=find_packages(),
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
