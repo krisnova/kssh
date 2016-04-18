@@ -33,7 +33,7 @@ import readline
 from subprocess import call
 
 # Execution Parameters
-version = "1.1.3"
+version = "1.1.4"
 show_errors = False
 
 # Usage for the tool
