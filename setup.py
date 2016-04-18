@@ -10,7 +10,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='kssh.py',
-    version='1.0.0',
+    version='1.0.7',
     description='kSSH is a simple utility for managing SSH hosts and tracking aliases in an SSH config file.',
     long_description=long_description,
     url='https://github.com/kris-nova/kssh.py',
