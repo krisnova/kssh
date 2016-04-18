@@ -9,11 +9,11 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='kssh',
+    name='kssh.py',
     version='1.0.0',
     description='kSSH is a simple utility for managing SSH hosts and tracking aliases in an SSH config file.',
     long_description=long_description,
-    url='https://github.com/kris-nova/kssh',
+    url='https://github.com/kris-nova/kssh.py',
     author='Kris Applesauce',
     author_email='kris@nivenly.com',
     license='MIT',
@@ -27,10 +27,10 @@ setup(
         'Programming Language :: Python :: 2.7',
     ],
     keywords='SSH, ssh, manager, management, wrapper, config, configuration, tool, utility, cli, command line, command, line',
-    py_modules=["kssh"],
+    py_modules=["kssh.py"],
     entry_points={
         'console_scripts': [
-            'kssh=kssh:kssh',
+            'kssh.py=kssh.py:main',
         ],
     },
 )

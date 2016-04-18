@@ -40,7 +40,7 @@ show_errors = False
 description = '''
 \033[1mkssh [Kris SSH]\033[0m V%s
 
-    Quick Start : kssh <new_ssh_alias>
+    Quick Start : kssh.py <new_ssh_alias>
 
     \033[1mkssh\033[0m is a simple utility for managing SSH hosts and tracking aliases in an SSH config file.
     This tool is catered to work on OSX. Any other operating systems are currently not supported.
@@ -48,29 +48,29 @@ description = '''
 [ACTIONS]
 
     \033[95m[CONNECT]\033[0m Will connected to an alias. If no alias is found, will attempt to create one.
-        kssh <\033[91malias\033[0m>
-        kssh connect <\033[91malias\033[0m>
+        kssh.py <\033[91malias\033[0m>
+        kssh.py connect <\033[91malias\033[0m>
 
     \033[95m[LIST]\033[0m Will list all known aliases.
-        kssh list
+        kssh.py list
 
     \033[95m[GENERATE]\033[0m Will generate a new RSA key named after the alias.
-        kssh GENERATE <\033[91malias\033[0m>
+        kssh.py GENERATE <\033[91malias\033[0m>
 
     \033[95m[COPY]\033[0m Will attempt to copy an RSA key to a remote host.
-        kssh copy <\033[91muser\033[0m> <\033[91mhost\033[0m> <\033[91mpath_to_key\033[0m>
+        kssh.py copy <\033[91muser\033[0m> <\033[91mhost\033[0m> <\033[91mpath_to_key\033[0m>
 
     \033[95m[TEST]\033[0m Will test a connection no a known alias. If the alias is not found, the test will fail.
-        kssh test <\033[91malias\033[0m>
+        kssh.py test <\033[91malias\033[0m>
 
     \033[95m[ADD]\033[0m Will add a new alias. If the alias already exists, it will be updated.
-        kssh add <\033[91malias\033[0m>
+        kssh.py add <\033[91malias\033[0m>
 
     \033[95m[DELETE]\033[0m Will delete an existing alias if it exists.
-        kssh delete <\033[91malias\033[0m>
+        kssh.py delete <\033[91malias\033[0m>
 
     \033[95m[PURGE]\033[0m Will purge the existing SSH config data (This cannot be undone!)
-        kssh purge
+        kssh.py purge
 ''' % version
 
 # Available actions
@@ -183,7 +183,7 @@ def action_add(name):
         if not action_test(name):
             out("Major error, unable to contact host")
             sys.exit(1)
-    out("You can now access this host using 'kssh %s'" % name)
+    out("You can now access this host using 'kssh.py %s'" % name)
 
 
 ########################################################################################################################
@@ -295,7 +295,7 @@ def action_connect(name):
 #
 def init_datastore():
     if not os.path.exists(os.path.expanduser('~') + "/.ssh"):
-        print "Setting up kssh datastore.."
+        print "Setting up kssh.py datastore.."
         os.makedirs(os.path.expanduser('~') + "/.ssh")
     if not os.path.exists(os.path.expanduser('~') + "/.ssh/config"):
         f = open(os.path.expanduser('~') + "/.ssh/config", 'w')
