@@ -28,6 +28,8 @@ Now the user can SSH into the host by using the same command as above.
 
 ##Actions
 
+###### These are arguments to the kSSH executable, and examples of how to use them.
+
 **CONNECT** Will connected to an alias. If no alias is found, will attempt to create one.
 
     kssh <alias>
