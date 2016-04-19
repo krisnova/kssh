@@ -62,10 +62,10 @@ Now the user can SSH into the host by using the same command as above.
     kssh purge
 
 #### New Release Process
+    
+    sudo -H python setup.py register sdist bdist upload
+    
  - Update version in kssh.py
  - Update version in setup.py
  - Push to github
  - Push to PyPi (Use credentials)
-
-
-    sudo -H python setup.py register sdist bdist upload
