@@ -10,13 +10,13 @@ kSSH abstracts the user from editing an SSH config file whenever a change is nee
  - Want to wipe the slate clean and start over? **kssh purge**
  - Does this alias even work anymore? **kssh test [alias]**
 
-#### Installing
+## Installing
 
 MacOS X
 
     sudo -h pip install kssh
 
-#### Running kSSH
+## Getting Started
 
 ######Quick Start
 
@@ -26,7 +26,7 @@ This will build a new kSSH record for the given alias. kSSH will then attempt to
 
 Now the user can SSH into the host by using the same command as above.
 
-######Actions
+##Actions
 
 **CONNECT** Will connected to an alias. If no alias is found, will attempt to create one.
 
@@ -61,7 +61,7 @@ Now the user can SSH into the host by using the same command as above.
 
     kssh purge
 
-#### New Release Process
+## New Release Process
     
     sudo -H python setup.py register sdist bdist upload
     
