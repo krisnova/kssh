@@ -28,8 +28,6 @@ Now the user can SSH into the host by using the same command as above.
 
 ######Actions
 
-[ACTIONS]
-
 **CONNECT** Will connected to an alias. If no alias is found, will attempt to create one.
 
     kssh <alias>
