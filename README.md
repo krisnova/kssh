@@ -8,7 +8,7 @@ kSSH abstracts the user from editing an SSH config file whenever a change is nee
  - Forget what you have registered? Want to see them all? **kssh list**
  - Ready to delete an alias? **kssh delete [alias]**
  - Want to wipe the slate clean and start over? **kssh purge**
- - Does this alias even work anymore? **kssh test [alias]**
+ - Does this alias still work? It's been a while..? **kssh test [alias]**
 
 ## Installing
 
