@@ -1,7 +1,14 @@
 # kSSH
-kSSH is a simple utility for managing SSH hosts and tracking aliases in an SSH config file.
-kSSH helps managing a large number of SSH hosts by making the process easy. With kSSH the user never needs to remember SSH hostnames again!
 
+kSSH is a command line utility that makes keeping track of SSH aliases much more convenient. A user can manage SSH aliases easily from the kSSH executable.
+
+kSSH abstracts the user from editing an SSH config file whenever a change is needed. Alias all the things!
+
+ - Want to add a new alias? *kssh <alias>*
+ - Forget what you have registered? Want to see them all? *kssh list*
+ - Ready to delete an alias? *kssh delete <alias>*
+ - Want to wipe the slate clean and start over? *kssh purge*
+ - Does this alias even work anymore? *kssh test <alias>*
 
 #### Installing
 
