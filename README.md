@@ -67,4 +67,5 @@ Now the user can SSH into the host by using the same command as above.
  - Push to github
  - Push to PyPi (Use credentials)
 
+
     sudo -H python setup.py register sdist bdist upload
