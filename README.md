@@ -4,11 +4,11 @@ kSSH is a command line utility that makes keeping track of SSH aliases much more
 
 kSSH abstracts the user from editing an SSH config file whenever a change is needed. Alias all the things!
 
- - Want to add a new alias? **kssh <alias>**
+ - Want to add a new alias? **kssh [alias]**
  - Forget what you have registered? Want to see them all? **kssh list**
- - Ready to delete an alias? **kssh delete <alias>**
+ - Ready to delete an alias? **kssh delete [alias]**
  - Want to wipe the slate clean and start over? **kssh purge**
- - Does this alias even work anymore? **kssh test <alias>**
+ - Does this alias even work anymore? **kssh test [alias]**
 
 #### Installing
 
