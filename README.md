@@ -41,7 +41,7 @@ Now the user can SSH into the host by using the same command as above.
 
 **GENERATE** Will generate a new RSA key named after the alias.
 
-    kssh GENERATE <alias>
+    kssh generate <alias>
 
 **COPY** Will attempt to copy an RSA key to a remote host.
 
