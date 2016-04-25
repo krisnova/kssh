@@ -1,15 +1,22 @@
 # kSSH
-kSSH is a simple utility for managing SSH hosts and tracking aliases in an SSH config file.
-kSSH helps managing a large number of SSH hosts by making the process easy. With kSSH the user never needs to remember SSH hostnames again!
 
+kSSH is a command line utility that makes keeping track of SSH aliases much more convenient. A user can manage SSH aliases easily from the kSSH executable.
 
-#### Installing
+kSSH abstracts the user from editing an SSH config file whenever a change is needed. Alias all the things!
+
+ - Want to add a new alias? **kssh [alias]**
+ - Forget what you have registered? Want to see them all? **kssh list**
+ - Ready to delete an alias? **kssh delete [alias]**
+ - Want to wipe the slate clean and start over? **kssh purge**
+ - Does this alias still work? It's been a while..? **kssh test [alias]**
+
+## Installing
 
 MacOS X
 
     sudo -h pip install kssh
 
-#### Running kSSH
+## Getting Started
 
 ######Quick Start
 
@@ -19,9 +26,9 @@ This will build a new kSSH record for the given alias. kSSH will then attempt to
 
 Now the user can SSH into the host by using the same command as above.
 
-######Actions
+##Actions
 
-[ACTIONS]
+###### These are arguments to the kSSH executable, and examples of how to use them.
 
 **CONNECT** Will connected to an alias. If no alias is found, will attempt to create one.
 
@@ -34,7 +41,7 @@ Now the user can SSH into the host by using the same command as above.
 
 **GENERATE** Will generate a new RSA key named after the alias.
 
-    kssh GENERATE <alias>
+    kssh generate <alias>
 
 **COPY** Will attempt to copy an RSA key to a remote host.
 
@@ -56,10 +63,11 @@ Now the user can SSH into the host by using the same command as above.
 
     kssh purge
 
-#### New Release Process
+## New Release Process
+    
+    sudo -H python setup.py register sdist bdist upload
+    
  - Update version in kssh.py
  - Update version in setup.py
  - Push to github
  - Push to PyPi (Use credentials)
-
-       sudo -H python setup.py register sdist bdist upload
