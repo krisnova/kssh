@@ -32,6 +32,9 @@ import rlcompleter
 import readline
 from subprocess import call
 
+# Default configuration
+default_key_name = "id_rsa"
+
 # Execution Parameters
 version = "1.1.5"
 show_errors = False
@@ -154,7 +157,9 @@ def action_add(name):
 
     # KEY
     readline.set_completer(complete_keys)
-    key = raw_input("Key: ")
+    key = raw_input("Key: ").rstrip()
+    if key == "":
+        key = default_key_name
 
     if ".ssh" not in key:
         key = os.path.expanduser('~') + "/.ssh/" + key
