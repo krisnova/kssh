@@ -36,7 +36,7 @@ from subprocess import call
 default_key_name = "id_rsa"
 
 # Execution Parameters
-version = "1.1.5"
+version = "1.1.6"
 show_errors = False
 
 # Usage for the tool
