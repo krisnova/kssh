@@ -166,7 +166,7 @@ def action_add(name):
         out("Key absolute path %s" % key)
     if not os.path.exists(key):
         out("Unable to locate key %s" % key)
-        key = action_generate(name)
+        key = action_generate(key)
     start = "##<---" + name + "---\n"
     stop = "\n##---" + name + "--->"
 
