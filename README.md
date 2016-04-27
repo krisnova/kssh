@@ -14,7 +14,7 @@ kSSH abstracts the user from editing an SSH config file whenever a change is nee
 
 MacOS X
 
-    sudo -h pip install kssh
+    sudo -H pip install kssh
 
 ## Getting Started
 
