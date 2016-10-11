@@ -14,7 +14,7 @@ setup(
     description='kSSH is a simple utility for managing SSH hosts and tracking aliases in an SSH config file.',
     long_description=long_description,
     url='https://github.com/kris-nova/kssh',
-    author='Kris Applesauce',
+    author='Kris Childress',
     author_email='kris@nivenly.com',
     license='MIT',
     packages=['kssh', ],
