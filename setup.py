@@ -10,11 +10,11 @@ with open(path.join(here, 'README'), encoding='utf-8') as f:
 
 setup(
     name='kssh',
-    version='1.1.6',
+    version='1.1.7',
     description='kSSH is a simple utility for managing SSH hosts and tracking aliases in an SSH config file.',
     long_description=long_description,
     url='https://github.com/kris-nova/kssh',
-    author='Kris Applesauce',
+    author='Kris Nova',
     author_email='kris@nivenly.com',
     license='MIT',
     packages=['kssh', ],

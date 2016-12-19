@@ -3,7 +3,7 @@
 #
 # MIT License
 #
-# Copyright (c) [2016] [Kris Applesauce]
+# Copyright (c) [2016-2017] [Kris Nova]
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -36,14 +36,14 @@ from subprocess import call
 default_key_name = "id_rsa"
 
 # Execution Parameters
-version = "1.1.6"
+version = "1.1.7"
 show_errors = False
 
 # Usage for the tool
 description = '''
 \033[1mkssh [Kris SSH]\033[0m V%s
 
-Author: Kris Cross Applesauce <kris@fabulous.af>
+Author: Kris Nova <kris@nivenly.com>
 
     Quick Start : kssh <new_ssh_alias>
 
