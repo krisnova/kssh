@@ -98,7 +98,7 @@ def main():
         if firstarg == "-h" or firstarg == "--help":
             sys.exit(1)
     except:
-        print description
+        print(description)
         sys.exit(1)
 
     init_datastore()
@@ -125,15 +125,15 @@ def main():
     except KeyboardInterrupt:
         out("\nSIGTERM detected. Exiting gracefully")
     except IndexError:
-        print description
+        print(description)
         sys.exit(1)
     except AttributeError:
         if show_errors:
-            print sys.exc_info()
+            print(sys.exc_info())
         action_connect(firstarg)
     except:
         if show_errors:
-            print sys.exc_info()
+            print(sys.exc_info())
     out("Bye!")
 
 
@@ -302,7 +302,7 @@ def action_connect(name):
 #
 def init_datastore():
     if not os.path.exists(os.path.expanduser('~') + "/.ssh"):
-        print "Setting up kssh datastore.."
+        print("Setting up kssh datastore..")
         os.makedirs(os.path.expanduser('~') + "/.ssh")
     if not os.path.exists(os.path.expanduser('~') + "/.ssh/config"):
         f = open(os.path.expanduser('~') + "/.ssh/config", 'w')
@@ -345,7 +345,7 @@ def get_data():
 # OUTPUT
 #
 def out(message):
-    print "\033[1mkSSH : \033[0m \033[95m%s\033[0m" % (message)
+    print("\033[1mkSSH : \033[0m \033[95m%s\033[0m" % (message))
 
 
 ########################################################################################################################
