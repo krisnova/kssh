@@ -18,7 +18,7 @@ MacOS X
 
 ## Getting Started
 
-######Quick Start
+#### Quick Start
 
     kssh <new_alias_name>
 
@@ -26,7 +26,7 @@ This will build a new kSSH record for the given alias. kSSH will then attempt to
 
 Now the user can SSH into the host by using the same command as above.
 
-##Actions
+## Actions
 
 ###### These are arguments to the kSSH executable, and examples of how to use them.
 
